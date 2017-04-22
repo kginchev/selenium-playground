@@ -6,9 +6,6 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-
-
-
 class ExerciseOne(unittest.TestCase):
 
     def setUp(self):
@@ -37,15 +34,6 @@ class ExerciseOne(unittest.TestCase):
         checkbox_car.click()
         submit.click()
         time.sleep(10)
-        #link.click()
-
-
-        # self.assertIn("Python", driver.title)
-
-        # elem.send_keys("pycon")
-        # elem.send_keys(Keys.RETURN)
-        # assert "No results found." not in driver.page_source
-
 
     def tearDown(self):
         self.driver.close()
